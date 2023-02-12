@@ -15,9 +15,6 @@
 
     @yield('content')
 
-    <footer>
-        @yield('footer')
-    </footer>
 
     @include('Estructura.footer')
 </body>
