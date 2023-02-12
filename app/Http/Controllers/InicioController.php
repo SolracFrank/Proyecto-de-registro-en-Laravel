@@ -8,6 +8,6 @@ class InicioController extends Controller
 {
     public function __invoke()
     {
-        return "Principal";
+        return view('index');
     }
 }
