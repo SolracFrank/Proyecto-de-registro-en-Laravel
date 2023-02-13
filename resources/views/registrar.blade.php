@@ -22,60 +22,61 @@
             <div class="card shadow">
                 <div class="card-header bg-primary text-white">Formulario de registro</div>
                 <div class="card-body">
-                    <form action="#" method="POST">
+                    <form action="{{url('/pdf')}}" method="post">
+                        @csrf
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="apellido_paterno" class="form-label">Apellido Paterno</label>
-                                <input type="text" class="form-control" id="apellido_paterno" name="apellido_paterno"
+                                <input type="text" class="form-control" id="ApellidoPaterno" name="ApellidoPaterno"
                                     required>
                             </div>
                             <div class="col">
                                 <label for="apellido_materno" class="form-label">Apellido Materno</label>
-                                <input type="text" class="form-control" id="apellido_materno" name="apellido_materno"
+                                <input type="text" class="form-control" id="ApellidoMaterno" name="ApellidoMaterno"
                                     required>
                             </div>
                             <div class="col">
                                 <label for="nombre" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                <input type="text" class="form-control" id="Nombre" name="Nombre" required>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="curp" class="form-label">CURP</label>
-                                <input type="text" class="form-control" id="curp" name="curp" required>
+                                <input type="text" class="form-control" id="CURP" name="CURP" required>
                             </div>
                             <div class="col">
                                 <label for="ciudad" class="form-label">Ciudad</label>
-                                <input type="text" class="form-control" id="ciudad" name="ciudad" required>
+                                <input type="text" class="form-control" id="Ciudad" name="Ciudad" required>
                             </div>
                             <div class="col">
                                 <label for="colonia" class="form-label">Colonia</label>
-                                <input type="text" class="form-control" id="colonia" name="colonia" required>
+                                <input type="text" class="form-control" id="Colonia" name="Colonia" required>
                             </div>
                             <div class="col">
                                 <label for="codigo_postal" class="form-label">Código postal</label>
-                                <input type="text" class="form-control" id="codigo_postal" name="codigo_postal" required>
+                                <input type="text" class="form-control" id="CodigoPostal" name="CodigoPostal" required>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="telefono" class="form-label">Teléfono</label>
-                                <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                                <input type="tel" class="form-control" id="Telefono" name="Telefono" required>
                             </div>
                             <div class="col">
                                 <label for="telefono_padre" class="form-label">Teléfono del padre</label>
-                                <input type="tel" class="form-control" id="telefono_padre" name="telefono_padre"
+                                <input type="tel" class="form-control" id="TelefonoTutor" name="TelefonoTutor"
                                     required>
                             </div>
                             <div class="col">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
+                                <input type="email" class="form-control" id="Email" name="Email" required>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col">
                                 <label for="especialidad1">Primera Especialidad:</label>
-                                <select id="especialidad1" name="especialidad1" required>
+                                <select id="fEspecialidad" name="fEspecialidad" required>
                                     <option value="">Seleccionar especialidad</option>
                                     <option value="Informatica">Informática</option>
                                     <option value="Contabilidad">Contabilidad</option>
@@ -85,7 +86,7 @@
                             </div>
                             <div class="col">
                                 <label for="especialidad2">Segunda Especialidad:</label>
-                                <select id="especialidad2" name="especialidad2" required>
+                                <select id="sEspecialidad" name="sEspecialidad" required>
                                     <option value="">Seleccionar especialidad</option>
                                     <option value="Informatica">Informática</option>
                                     <option value="Contabilidad">Contabilidad</option>
@@ -95,7 +96,7 @@
                             </div>
                             <div class="col">
                                 <label for="promedio">Promedio:</label>
-                                <input type="number" id="promedio" name="promedio" step="0.01" required>
+                                <input type="number" id="Promedio" name="Promedio" step="0.01" required>
                             </div>
                         </div>
                         <div class="row justify-content-md-center">

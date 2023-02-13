@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\RegistroController;
 use  App\Http\Controllers\InicioController;
+use  App\Http\Controllers\PDFController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,12 +17,13 @@ use  App\Http\Controllers\InicioController;
 */
 Route::controller(RegistroController::class) -> group(function()
 {
-    Route::get('inicio', 'index');
-
+    Route::get('buscar', 'search')->name('buscar');
     Route::get('registro', 'create')->name('registro');
 
 });
-
-
+Route::resource('pdf', PDFController::class);
 Route::get('/',InicioController::class)->name('home');
+Route::get('/pdfx/{CURP}', 'PDFController@show')->name('pdfx.show');
+
+
 

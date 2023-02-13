@@ -6,6 +6,7 @@
 .principal
 {
     background-color:#f8f8f8;
+    background: url('images/fondo-escuela.png');
 }
 @endsection
 

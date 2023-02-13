@@ -7,7 +7,7 @@
       <div class="navbar-nav" >
         <a class="nav-item nav-link active" href="{{ route('home') }}">Inicio <span class="sr-only">(current)</span></a>
         <a class="nav-item nav-link" href="{{ route('registro') }}">Registrarse</a>
-        <a class="nav-item nav-link" href="#">Ver inscritos</a>
+        <a class="nav-item nav-link" href="{{route('buscar')}}">Ver inscritos</a>
       </div>
     </div>
   </nav>
