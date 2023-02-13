@@ -13,7 +13,7 @@ class RegistroController extends Controller
 
     public function create()
     {
-     return "rellenar"; 
+        return view('registrar');
     }
 
 }

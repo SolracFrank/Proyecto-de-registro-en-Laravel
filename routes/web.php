@@ -18,10 +18,10 @@ Route::controller(RegistroController::class) -> group(function()
 {
     Route::get('inicio', 'index');
 
-    Route::get('registro', 'create');
+    Route::get('registro', 'create')->name('registro');
+
 });
 
 
-
-Route::get('/',InicioController::class);
+Route::get('/',InicioController::class)->name('home');
 

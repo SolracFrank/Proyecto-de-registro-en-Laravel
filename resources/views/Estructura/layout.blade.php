@@ -8,7 +8,9 @@
 
 
     <title>@yield('title')</title>
-
+   <style>
+        @yield('diseno');
+   </style>
 </head>
 <body>
     @include('Estructura.header')

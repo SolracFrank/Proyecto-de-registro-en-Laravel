@@ -23,12 +23,13 @@ return new class extends Migration
             $table -> string('Ciudad');
             $table -> string('Colonia');
             $table -> string('CodigoPostal',5);
-            $table -> string('Telefono',12);
-            $table -> string('TelefonoTutor',12);
+            $table -> string('Telefono');
+            $table -> string('TelefonoTutor');
             $table -> string('Email')->unique();
             $table -> string('fEspecialidad');
             $table -> string('sEspecialidad');
             $table->double('Promedio', 5, 2);
+            
         });
     }
 
